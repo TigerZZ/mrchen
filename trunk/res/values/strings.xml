@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">LearnAndroid</string>
+    <string name="use_handler">Handler使用</string>
+    <string name="get_systemRes">进度条线程</string>
+	<string name="text">LargeText</string>
+	<string name="loadimage">加载图片</string>
+	<string name="screenprotect">进入屏保</string>
+</resources>
