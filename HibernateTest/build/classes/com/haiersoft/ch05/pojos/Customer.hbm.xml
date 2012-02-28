@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+
+<hibernate-mapping >
+
+	<class name="com.haiersoft.ch05.pojos.Customer" table="CUSTOMER">
+		<id name="id" column="ID">
+			<generator class="native"></generator>
+		</id>	
+		<property name="userName" column="USERNAME" type="string" not-null="true"></property>
+		<property name="passWord" column="PASSWORD" type="string" not-null="true"></property>
+		<property name="realName" column="REALNAME" type="string" ></property>
+		<property name="address" column="ADDRESS" type="string" ></property>
+		<property name="mobile" column="MOBILE" type="string" ></property>
+	</class>
+
+</hibernate-mapping>

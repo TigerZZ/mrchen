@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">mysqladmin</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mldn</property>
+       <!--在控制台显示SQL语句  -->
+       	<property name="show_sql">true</property>
+       	
+       	<!-- 根据需要自动生成、更新数据表 -->
+       	<property name="hbm2ddl.auto">update</property>
+       	<!-- 注册所有ORM映射文件 -->
+        <mapping resource="com/haiersoft/ch05/pojos/User.hbm.xml"/>
+        <mapping resource="com/haiersoft/ch05/pojos/Customer.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
